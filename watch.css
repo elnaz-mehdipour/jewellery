@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.logo{
+    display: flex;
+    padding-left: 40%;
+    padding-top: 2%;
+    justify-content: center;
+}
+
+.menu{
+    border-bottom: solid 1px gray;
+    /* height: 100px; */
+    height: 15vh;
+    }
+    .menu > ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: 3%;
+    }
+    .menu ul:not(.dropdown){
+        padding-top: 40px;
+    }
+    .menu ul li a:hover{
+        text-decoration: underline rgb(233, 53, 53) 4px;
+        font-weight: bold;
+        
+    }
+    
+    .dropdown {
+        display: none;
+        list-style: none;
+    }
+     .drop-li:hover .dropdown {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    min-height: 10rem;
+
+    }
+    .menu a {
+        color:#000;
+        text-decoration: none;
+        background-color: #fff;
+        height: 20px;
+        position: relative;
+
+    }
+    #dropdown{
+        position: relative;
+        background: #fff;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    /* main section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        
+    } */
+    .container{
+        border:rgb(128, 125, 125) solid 1px;
+        height: 300px;
+        width: 250px;
+        border-radius: 4%;
+        /* background: rgba(122, 35, 35,1); */
+        
+        background-image: url(https://i.pinimg.com/236x/6b/09/48/6b0948b4a611379e44c59a8c74205aba.jpg);
+        background-size: cover;
+        /* margin-top: -180px; */
+        
+        }
+        .watch{
+            display: inline-block;
+        }
+        .artic{
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .artic2{
+            display: flex;
+           gap: 40px;
+            flex-wrap: wrap;
+        }
+        .artic-div{
+
+width: 600px;
+display: flex;
+margin-left: 55%;
+margin-top: -670px;
+        }
+        .container h3{
+            font-size:20px;
+            color: rgb(207, 201, 201);
+            padding-bottom: 10px;
+            text-align: center;
+            margin-top: -5px;
+           }
+           .container span{
+            text-align: center;
+            color: rgb(207, 201, 201);
+            font-size: 16px;
+            padding-left: 35%;
+            padding-bottom: 20px;
+           }
+           .artic3{
+            margin-top: 70px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+           }
+           @media screen and (max-width:1276px) {
+            .watch{
+                display: none;
+            }
+           }
